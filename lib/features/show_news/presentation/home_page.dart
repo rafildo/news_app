@@ -1,10 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/constants/palette.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      backgroundColor: Palette.background,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Palette.background,
+        title: const Text(
+          "News",
+          style: TextStyle(
+            color: Palette.navyBlue,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      body: const Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          TextField(
+            decoration: InputDecoration(),
+          ),
+        ],
+      ),
+    );
   }
 }
