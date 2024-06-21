@@ -20,11 +20,15 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: const Column(
+      body: Column(
         mainAxisSize: MainAxisSize.max,
-        children: [
-          TextField(
-            decoration: InputDecoration(),
+        children: const [
+            TextField(
+            decoration: InputDecoration(
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(width: 1, color: Palette.lightGrey,),
+              ),
+            ),            
           ),
         ],
       ),
