@@ -8,6 +8,7 @@ class NewsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
+        margin: const EdgeInsets.only(bottom: 16),
         height: 300,
         width: MediaQuery.of(context).size.width - (2 * 16),
         child: Stack(children: [
